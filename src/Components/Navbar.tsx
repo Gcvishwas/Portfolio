@@ -2,7 +2,11 @@ import { useEffect, useState } from "react";
 import { cn } from "../lib/utils";
 import { Menu, X } from "lucide-react";
 
-const navItems = [
+type NavItem = {
+  name: string;
+  href: string;
+};
+const navItems: NavItem[] = [
   { name: "Home", href: "#hero" },
   { name: "About", href: "#about" },
   { name: "Skills", href: "#skills" },
@@ -11,8 +15,8 @@ const navItems = [
 ];
 
 const Navbar = () => {
-  const [isScroll, setIsScroll] = useState(false);
-  const [isMenu, setIsMenu] = useState(false);
+  const [isScroll, setIsScroll] = useState<boolean>(false);
+  const [isMenu, setIsMenu] = useState<boolean>(false);
   useEffect(() => {
     const handleScroll = () => {
       setIsScroll(window.scrollY > 10);
@@ -39,7 +43,7 @@ const Navbar = () => {
 
         {/* Desktop nav */}
 
-        <div className="hidden md:flex space-x-8 mr-5">
+        <div className="hidden md:flex space-x-8 transform -translate-x-1/2 left-1/2 absolute">
           {navItems.map((item, key) => (
             <a
               key={key}
