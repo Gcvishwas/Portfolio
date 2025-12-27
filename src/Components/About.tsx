@@ -1,3 +1,5 @@
+import { Briefcase, Code, GraduationCap } from "lucide-react";
+
 const About = () => {
   return (
     <section id="about" className="py-24 px-4 relative">
@@ -32,10 +34,49 @@ const About = () => {
           </div>
           <div className="grid grid-cols-1 gap-6">
             <div className="gradient-border p-6 card hover">
-              <div className="flex items-start gap-4"></div>
+              <div className="flex items-start gap-4">
+                <div className="p-3 rounded-full bg-primary/10">
+                  <Code className="h-6 w-6 text-primary" />
+                </div>
+                <div className="text-left">
+                  <h1 className="font-semibold text-lg">Web Development</h1>
+                  <p className="text-muted-foreground">
+                    Creating responsive websites and application with modern
+                    frameworks.
+                  </p>
+                </div>
+              </div>
             </div>
-            <div className="gradient-border p-6 card hover"></div>
-            <div className="gradient-border p-6 card hover"></div>
+            <div className="gradient-border p-6 card hover">
+              <div className="flex items-start gap-4">
+                <div className="p-3 rounded-full bg-primary/10">
+                  <GraduationCap className="h-6 w-6 text-primary" />
+                </div>
+                <div className="text-left">
+                  <h1 className="font-semibold text-lg">Education</h1>
+                  <p className="text-muted-foreground">
+                    Undergraduate student pursuing B.Sc. CSIT under Tribhuvan
+                    University, with a strong focus on computer science
+                    fundamentals and practical skills.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="gradient-border p-6 card hover">
+              <div className="flex items-start gap-4">
+                <div className="p-3 rounded-full bg-primary/10">
+                  <Briefcase className="h-6 w-6 text-primary" />
+                </div>
+                <div className="text-left">
+                  <h1 className="font-semibold text-lg">Experience & Growth</h1>
+                  <p className="text-muted-foreground">
+                    Hands-on experience building real-world projects using
+                    React, TypeScript, and modern web technologies, with a
+                    mindset of continuous improvement.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
