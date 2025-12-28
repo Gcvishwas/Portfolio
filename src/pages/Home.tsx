@@ -1,6 +1,7 @@
 import About from "../Components/About";
 import Hero from "../Components/Hero";
 import Navbar from "../Components/Navbar";
+import Projects from "../Components/Projects";
 import Skills from "../Components/Skills";
 import StarBackground from "../Components/StarBackground";
 import ThemeToggle from "../Components/ThemeToggle";
@@ -19,6 +20,7 @@ const Home = () => {
         <Hero />
         <About />
         <Skills />
+        <Projects />
       </main>
       {/* Footer */}
     </div>
