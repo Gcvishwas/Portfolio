@@ -1,4 +1,4 @@
-import { Briefcase, Code, GraduationCap } from "lucide-react";
+import { Code, GraduationCap, TrendingUp } from "lucide-react";
 
 const About = () => {
   return (
@@ -65,7 +65,7 @@ const About = () => {
             <div className="gradient-border p-6 card hover">
               <div className="flex items-start gap-4">
                 <div className="p-3 rounded-full bg-primary/10">
-                  <Briefcase className="h-6 w-6 text-primary" />
+                  <TrendingUp className="h-6 w-6 text-primary" />
                 </div>
                 <div className="text-left">
                   <h1 className="font-semibold text-lg">Experience & Growth</h1>
