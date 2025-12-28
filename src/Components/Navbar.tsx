@@ -18,6 +18,16 @@ const Navbar = () => {
   const [isScroll, setIsScroll] = useState<boolean>(false);
   const [isMenu, setIsMenu] = useState<boolean>(false);
   useEffect(() => {
+    if (isMenu) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isMenu]);
+  useEffect(() => {
     const handleScroll = () => {
       setIsScroll(window.scrollY > 10);
     };
@@ -28,7 +38,7 @@ const Navbar = () => {
     <nav
       className={cn(
         "fixed w-full z-40 transition-all duration-300",
-        isScroll ? "py-3 bg-background/80 backdrop-blur-md shadow-xs" : "py-5"
+        isScroll ? "py-4 bg-background/80 backdrop-blur-md shadow-xs" : "py-5"
       )}
     >
       <div className="container flex items-center justify-between">
@@ -66,11 +76,9 @@ const Navbar = () => {
         </button>
         <div
           className={cn(
-            "fixed inset-0 bg-background/95 backdrop-blur-md px-40 flex flex-col items-center justify-center ",
+            "fixed inset-0 h-screen bg-background backdrop-blur-lg px-40 flex flex-col items-center justify-center",
             "transition-all duration-300 md:hidden",
-            isMenu
-              ? "opacity-100 pointer-events-auto"
-              : "opacity-0 pointer-events-none"
+            isMenu ? "translate-x-0" : "translate-x-full"
           )}
         >
           <div className="flex flex-col text-xl space-y-8 ">
