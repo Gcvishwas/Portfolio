@@ -24,5 +24,3 @@ export const skills: Skill[] = [
   { name: "Canva", level: 50, category: "tools", experience: "Intermediate" },
   { name: "VS Code", level: 90, category: "tools", experience: "Intermediate" },
 ];
-
-export const categories = ["all", "frontend", "backend", "tools"] as const;
