@@ -44,7 +44,7 @@ const Projects = () => {
                   className="w-full h-full object-cover transition-all duration-700 group-hover:scale-110 group-hover:rotate-1"
                 />
                 {/* Gradient Overlay */}
-                <div className="absolute inset-0 bg-linear-to-t from-card via-card/50 to-transparent opacity-60 group-hover:opacity-40 transition-opacity duration-500 "></div>
+                <div className="absolute inset-0 bg-linear-to-t from-card via-card/5 to-transparent opacity-20 group-hover:opacity-40 transition-opacity duration-500 "></div>
                 {/* Floating Action Buttons */}
                 <div className="absolute top-4 right-4 flex gap-2 opacity-0 group-hover:opacity-60 transition-opacity duration-500">
                   <a
