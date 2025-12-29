@@ -1,71 +1,6 @@
 import { useState } from "react";
 import { cn } from "../lib/utils";
-
-type Skill = {
-  name: string;
-  level: number;
-  category: string;
-  experience: "Beginner" | "Intermediate" | "Advanced";
-};
-const skills: Skill[] = [
-  // Frontend
-  {
-    name: "HTML/CSS",
-    level: 90,
-    category: "frontend",
-    experience: "Intermediate",
-  },
-  {
-    name: "Javascript",
-    level: 80,
-    category: "frontend",
-    experience: "Intermediate",
-  },
-  {
-    name: "React",
-    level: 80,
-    category: "frontend",
-    experience: "Intermediate",
-  },
-  {
-    name: "Typescript",
-    level: 40,
-    category: "frontend",
-    experience: "Beginner",
-  },
-  {
-    name: "Tailwind CSS",
-    level: 80,
-    category: "frontend",
-    experience: "Intermediate",
-  },
-
-  // Backend
-  {
-    name: "Node.js",
-    level: 70,
-    category: "backend",
-    experience: "Intermediate",
-  },
-  {
-    name: "Express",
-    level: 70,
-    category: "backend",
-    experience: "Intermediate",
-  },
-  { name: "SQL", level: 85, category: "backend", experience: "Intermediate" },
-  { name: "NoSQL", level: 80, category: "backend", experience: "Intermediate" },
-
-  // Tools
-  {
-    name: "Git/GitHub",
-    level: 80,
-    category: "tools",
-    experience: "Intermediate",
-  },
-  { name: "Canva", level: 50, category: "tools", experience: "Intermediate" },
-  { name: "VS Code", level: 90, category: "tools", experience: "Intermediate" },
-];
+import { skills } from "../data/skills";
 const categories = ["all", "frontend", "backend", "tools"];
 const Skills = () => {
   const [activeCategory, setActiveCategory] = useState("all");
@@ -95,7 +30,7 @@ const Skills = () => {
           ))}
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {filteredSkills.map((skill, key) => (
+          {filteredSkills.map((skill) => (
             <div
               key={skill.name}
               className="bg-card p-6 rounded-lg shadow-xs card-hover "
