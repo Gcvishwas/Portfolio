@@ -3,26 +3,26 @@ import { useEffect, useState } from "react";
 import { cn } from "../lib/utils";
 
 const ThemeToggle = () => {
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isLightMode, setIsLightMode] = useState(false);
   useEffect(() => {
     const storedTheme = localStorage.getItem("theme");
-    if (storedTheme === "dark") {
-      document.documentElement.classList.add("dark");
-      setIsDarkMode(true);
+    if (storedTheme === "light") {
+      document.documentElement.classList.add("light");
+      setIsLightMode(true);
     } else {
-      document.documentElement.classList.remove("dark");
-      setIsDarkMode(false);
+      document.documentElement.classList.remove("light");
+      setIsLightMode(false);
     }
   }, []);
   const toggleTheme = () => {
-    if (isDarkMode) {
-      document.documentElement.classList.remove("dark");
-      localStorage.setItem("theme", "light");
-      setIsDarkMode(false);
-    } else {
-      document.documentElement.classList.add("dark");
+    if (isLightMode) {
+      document.documentElement.classList.remove("light");
       localStorage.setItem("theme", "dark");
-      setIsDarkMode(true);
+      setIsLightMode(false);
+    } else {
+      document.documentElement.classList.add("light");
+      localStorage.setItem("theme", "light");
+      setIsLightMode(true);
     }
   };
   return (
@@ -32,10 +32,10 @@ const ThemeToggle = () => {
         "fixed max-sm:hidden top-6 md:top-5 right-5 z-50 -2 rounded-full transition-colors duration-300 focus:outline-hidden"
       )}
     >
-      {isDarkMode ? (
-        <Sun className="h-6 w-6 text-yellow-300" />
-      ) : (
+      {isLightMode ? (
         <Moon className="h-6 w-6 text-blue-900" />
+      ) : (
+        <Sun className="h-6 w-6 text-yellow-300" />
       )}
     </button>
   );
