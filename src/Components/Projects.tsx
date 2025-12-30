@@ -4,7 +4,7 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="py-24 px-4 relative overflow-hidden bg-linear-to-b from-background via-background to-primary/5"
+      className="py-24 px-4 relative overflow-hidden bg-background/30"
     >
       {/* Decorations */}
       <div className="absolute inset-0 overflow-hidden ponter-events-none">
@@ -97,14 +97,6 @@ const Projects = () => {
             className="cosmic-button w-fit flex items-center gap-2"
           >
             Check My Github
-            <ArrowRight size={16} />
-          </a>
-          <a
-            href="https://github.com/Gcvishwas"
-            target="_blank"
-            className="cosmic-button flex items-center  gap-2"
-          >
-            Check My Linkedinf
             <ArrowRight size={16} />
           </a>
         </div>
