@@ -59,17 +59,17 @@ const Footer = () => {
             <h3 className="font-semibold text-lg mb-4">Connect</h3>
             <div className="flex gap-4 items-center justify-center">
               <SocialLink
-                href="https://facebook.com"
+                href="https://www.facebook.com/vishwas.3344914"
                 icon={<Facebook />}
                 hoverColor={"text-primary"}
               />
               <SocialLink
-                href="https://instagram.com"
+                href="https://www.instagram.com/vishwas.gc"
                 icon={<Instagram />}
                 hoverColor={"text-primary"}
               />
               <SocialLink
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/vishwasgc"
                 icon={<Linkedin />}
                 hoverColor={"text-primary"}
               />
