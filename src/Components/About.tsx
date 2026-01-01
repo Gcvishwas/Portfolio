@@ -1,4 +1,4 @@
-import { Code, GraduationCap, TrendingUp } from "lucide-react";
+import { Code, Download, GraduationCap, TrendingUp } from "lucide-react";
 
 const About = () => {
   return (
@@ -25,10 +25,12 @@ const About = () => {
                 Get In touch
               </a>
               <a
-                href=""
-                className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300"
+                href="/Vishwas Gharti Chhetri.pdf"
+                download="/Vishwas Gharti Chhetri.pdf"
+                className="flex gap-2 items-center px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300"
               >
                 Download CV
+                <Download className="h-4 w-4" />
               </a>
             </div>
           </div>
