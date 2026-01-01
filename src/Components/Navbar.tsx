@@ -69,7 +69,7 @@ const Navbar = () => {
 
         <button
           onClick={() => setIsMenu((prev) => !prev)}
-          className="md:hidden p-2 text-foreground z-50"
+          className="md:hidden p-1 mr-2 text-foreground z-50"
           aria-label={isMenu ? "Close Menu" : "Open Menu"}
         >
           {isMenu ? <X size={24} /> : <Menu size={24} />}
