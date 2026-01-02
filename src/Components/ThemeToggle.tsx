@@ -29,7 +29,7 @@ const ThemeToggle = () => {
     <button
       onClick={toggleTheme}
       className={cn(
-        "fixed top-6 md:top-5 right-5 z-50 -2 rounded-full transition-colors duration-300 focus:outline-hidden"
+        "fixed top-4 max-sm:py-1 right-5 z-50 rounded-full transition-colors duration-300 focus:outline-hidden"
       )}
     >
       {isLightMode ? (
