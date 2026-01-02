@@ -27,7 +27,7 @@ const About = () => {
               <a
                 href="/Vishwas Gharti Chhetri.pdf"
                 download="/Vishwas Gharti Chhetri.pdf"
-                className="flex gap-2 items-center px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300"
+                className="flex gap-2 items-center justify-center px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300"
               >
                 Download CV
                 <Download className="h-4 w-4" />
