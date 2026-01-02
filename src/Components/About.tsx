@@ -1,4 +1,5 @@
 import { Code, Download, GraduationCap, TrendingUp } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const About = () => {
   return (
@@ -21,9 +22,9 @@ const About = () => {
               upscale myself.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
-              <a href="#contact" className="cosmic-button">
+              <Link to="/contact" className="cosmic-button">
                 Get In touch
-              </a>
+              </Link>
               <a
                 href="/Vishwas Gharti Chhetri.pdf"
                 download="/Vishwas Gharti Chhetri.pdf"
