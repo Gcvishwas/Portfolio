@@ -3,7 +3,7 @@
 A modern, responsive **personal portfolio website** built using **Vite + React + TypeScript + Tailwind CSS**.
 This project is fully open-source and **anyone can fork, edit, and customize it** to create their own portfolio.
 
-🔗 **Live Site:** 👉 https://vishwasgc.vercel.app/
+🔗 **Live Site:** 👉 <a href="">Site</a>
 
 ---
 
