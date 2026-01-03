@@ -101,7 +101,7 @@ Follow these steps to run the project locally:
 
 ```bash
 # Clone the repository
-git clone 
+git clone https://github.com/Gcvishwas/Portfolio.git
 
 # Navigate into the project directory
 cd 
