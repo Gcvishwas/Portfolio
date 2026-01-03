@@ -1,73 +1,182 @@
-# React + TypeScript + Vite
+# Personal Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive **personal portfolio website** built using **Vite + React + TypeScript + Tailwind CSS**.
+This project is fully open-source and **anyone can fork, edit, and customize it** to create their own portfolio.
 
-Currently, two official plugins are available:
+🔗 **Live Site:** 👉 https://vishwasgc.vercel.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 📑 Table of Contents
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* [Overview](#overview)
+* [Tech Stack](#tech-stack)
+* [Features](#features)
+* [Project Structure](#project-structure)
+* [Getting Started](#getting-started)
+* [Customization Guide](#customization-guide)
+* [Data Configuration](#data-configuration)
+* [Limitations & Future Improvements](#limitations--future-improvements)
+* [Contributing](#contributing)
+* [License](#license)
+* [Author](#author)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 📌 Overview
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+This portfolio website is designed to showcase personal projects, skills, and contact information in a clean and visually appealing way. It follows a **component-based architecture** and uses **TypeScript** for type safety and maintainability.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+The project is beginner-friendly and ideal for students or developers who want a customizable portfolio template.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+---
+
+## 🛠 Tech Stack
+
+* **Vite** – Fast build tool and development server
+* **React** – UI library
+* **TypeScript** – Static typing for better scalability
+* **Tailwind CSS** – Utility-first CSS framework
+* **Lucide Icons** – Icon library
+
+---
+
+## ✨ Features
+
+* Responsive design for all screen sizes
+* Dark / Light theme toggle
+* Animated star & meteor background
+* Skills and Projects managed via data files
+* Clean and modular component structure
+* Easy to customize and extend
+
+---
+
+## 📂 Project Structure
+
+```
+my-portfolio
+├── node_modules
+├── public
+│   └── projects        # Project images and CV
+├── src
+│   ├── assets
+│   ├── components
+│   │   ├── about.tsx
+│   │   ├── contact.tsx
+│   │   ├── footer.tsx
+│   │   ├── hero.tsx
+│   │   ├── navbar.tsx
+│   │   ├── projects.tsx
+│   │   ├── skills.tsx
+│   │   ├── starbackground.tsx
+│   │   └── ThemeToggle.tsx
+│   ├── data
+│   │   ├── project.ts
+│   │   └── skill.ts
+│   ├── lib
+│   │   └── util.ts
+│   ├── pages
+│   │   ├── Home.tsx
+│   │   └── NotFound.tsx
+│   ├── App.tsx
+│   ├── Main.tsx
+│   └── index.css
+├── .gitignore
+├── eslint.config.js
+├── index.html
+├── package.json
+├── package-lock.json
+├── tsconfig.json
+├── tsconfig.app.json
+├── tsconfig.node.json
+└── vite.config.ts
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🚀 Getting Started
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Follow these steps to run the project locally:
+
+```bash
+# Clone the repository
+git clone 
+
+# Navigate into the project directory
+cd 
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
 ```
+
+The app will run on **[http://localhost:5173](http://localhost:5173)** by default.
+
+---
+
+## 🎨 Customization Guide
+
+You can easily make this portfolio your own:
+
+* Update **Hero, About, Skills, and Projects** components with your information
+* Replace images and CV in the `public/projects` folder
+* Modify colors and styles using **Tailwind CSS**
+* Change routes or sections as needed
+
+---
+
+## 🌌 StarBackground Component
+
+The `StarBackground` component provides animated **stars and meteors** for a visually appealing background.
+
+* You can control the **number of stars and meteors** directly inside the component
+* Animations are lightweight and optimized for performance
+
+---
+
+## 📊 Data Configuration
+
+The `data` folder contains reusable data arrays:
+
+* `skill.ts` → List of skills
+* `project.ts` → List of projects
+
+You can add, remove, or update items in these arrays without touching the UI components.
+
+---
+
+## ⚠️ Limitations & Future Improvements
+
+* ❌ Contact form currently uses the traditional **HTML `mailto:` method**, which opens the user's email client
+* 🔄 Future plan to integrate **EmailJS or another email service** for direct form submissions
+* ⭐ A **Recommendations / Testimonials** section is planned for future versions
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome!
+
+1. Fork the repository
+2. Create a new branch (`feature/your-feature-name`)
+3. Commit your changes
+4. Open a Pull Request
+
+---
+
+## 📜 License
+
+This project is open-source and available under the **MIT License**.
+
+---
+
+## 👤 Author
+
+**Vishwas Gharti Chhetri**
+
+---
+
+⭐ If you like this project, consider giving it a star on GitHub!
