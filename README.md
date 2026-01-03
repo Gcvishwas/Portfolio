@@ -3,7 +3,7 @@
 A modern, responsive **personal portfolio website** built using **Vite + React + TypeScript + Tailwind CSS**.
 This project is fully open-source and **anyone can fork, edit, and customize it** to create their own portfolio.
 
-🔗 **Live Site:** 👉 <a href="https://vishwasgc.vercel.app/">Site</a>
+🔗 **Live Site:** 👉 <a href="https://vishwasgc.vercel.app/"> Portfolio </a>
 
 ---
 
@@ -23,7 +23,7 @@ This project is fully open-source and **anyone can fork, edit, and customize it*
 
 ---
 
-##📌 Overview
+## 📌 Overview
 
 This portfolio website is designed to showcase personal projects, skills, and contact information in a clean and visually appealing way. It follows a **component-based architecture** and uses **TypeScript** for type safety and maintainability.
 
