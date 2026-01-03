@@ -23,7 +23,7 @@ This project is fully open-source and **anyone can fork, edit, and customize it*
 
 ---
 
-## 📌 Overview
+##📌 Overview
 
 This portfolio website is designed to showcase personal projects, skills, and contact information in a clean and visually appealing way. It follows a **component-based architecture** and uses **TypeScript** for type safety and maintainability.
 
