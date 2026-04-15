@@ -50,6 +50,8 @@ const Projects = () => {
                   <a
                     href={project.url}
                     target="_blank"
+                    rel="noopener noreferrer"
+                    title="Visit project"
                     className="p-2.5 bg-background/90 backdrop-blur-sm rounded-full hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover:scale-110 shadow-lg"
                   >
                     <ExternalLink size={18} />
@@ -57,6 +59,8 @@ const Projects = () => {
                   <a
                     href={project.url}
                     target="_blank"
+                    rel="noopener noreferrer"
+                    title="View source code"
                     className="p-2.5 bg-background/90 backdrop-blur-sm rounded-full hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover:scale-110 shadow-lg"
                   >
                     <Github size={18} />
@@ -94,6 +98,7 @@ const Projects = () => {
           <a
             href="https://github.com/Gcvishwas"
             target="_blank"
+            rel="noopener noreferrer"
             className="cosmic-button w-fit flex items-center gap-2"
           >
             Check My Github
