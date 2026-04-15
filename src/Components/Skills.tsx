@@ -5,7 +5,7 @@ const categories = ["all", "frontend", "backend", "tools"];
 const Skills = () => {
   const [activeCategory, setActiveCategory] = useState("all");
   const filteredSkills = skills.filter(
-    (skill) => activeCategory === "all" || skill.category === activeCategory
+    (skill) => activeCategory === "all" || skill.category === activeCategory,
   );
   return (
     <section id="skills" className="py-24 px-4 relative bg-background/30">
@@ -22,7 +22,7 @@ const Skills = () => {
                 "px-5 py-2 rounded-full transition-colors duration-300 capitalize ",
                 activeCategory === category
                   ? "bg-primary text-primary-foreground mb-4"
-                  : "bg-secondary/70 text-foreground hover:bg-secondary"
+                  : "bg-secondary/70 text-foreground hover:mb-2 hover:opacity-40",
               )}
             >
               {category}
