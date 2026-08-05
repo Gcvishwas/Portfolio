@@ -29,4 +29,14 @@ export const projects: Project[] = [
     url: "https://abhyasi-ashen.vercel.app",
     githubUrl: "https://github.com/Gcvishwas/Abhyasi---AI-Interviewer",
   },
+  {
+    id:3,
+    title:"Subscription-Tracker",
+    description:
+    "API created using Express.js and MongoDB that allows user to sign-up, sign-in, create subscriptions, and also send remainders using Nodemailer.js to the users",
+    image:"/Projects/Subscription.jpg",
+    tags:["JS", "Node", "Express", "MongoDB"],
+    url:"https://github.com/Gcvishwas/Subscription-Tracker",
+    githubUrl:"https://github.com/Gcvishwas/Subscription-Tracker"
+  }
 ];
